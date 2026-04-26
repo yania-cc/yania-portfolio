@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yania C | Dental Student Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2913/2913465.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Yania C</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#courses">Courses</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Yania C</h1>
+      <h2>Dental Student | ATSU</h2>
+      <p>
+        Aspiring dental professional committed to compassionate patient care,
+        clinical excellence, and lifelong learning.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">Contact Me</a>
+        <a href="#" class="btn-secondary" onclick="alert('Upload your resume PDF and link it here!')">
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="profile.png" alt="Profile Picture" />
+      <p class="image-note">Upload your professional headshot here</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h3>About Me</h3>
+    <p>
+      I'm a dental student at <strong>ATSU</strong> with a passion for preventive dentistry,
+      patient education, and creating confident smiles. I enjoy learning modern clinical
+      techniques and improving patient comfort through communication and empathy.
+    </p>
+
+    <div class="highlights">
+      <div class="card">
+        <h4>Patient-Focused</h4>
+        <p>Dedicated to providing compassionate care and improving patient trust.</p>
+      </div>
+      <div class="card">
+        <h4>Detail-Oriented</h4>
+        <p>Committed to accuracy in procedures, documentation, and dental charting.</p>
+      </div>
+      <div class="card">
+        <h4>Always Learning</h4>
+        <p>Interested in new dental technologies, clinical research, and best practices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section light">
+    <h3>Education</h3>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>A.T. Still University (ATSU)</h4>
+        <p class="sub">Doctor of Dental Medicine (DMD) Candidate</p>
+        <p class="date">Expected Graduation: 202X</p>
+        <p>
+          Currently pursuing dental education with clinical training in diagnostics,
+          restorative dentistry, radiology, and oral health prevention.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Undergraduate Studies</h4>
+        <p class="sub">Bachelor's Degree (Add Major Here)</p>
+        <p class="date">Year - Year</p>
+        <p>
+          Completed foundational coursework in biology, chemistry, anatomy, and
+          health sciences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="section">
+    <h3>Relevant Coursework</h3>
+    <p>
+      Courses and clinical training that support strong fundamentals in dentistry and patient care.
+    </p>
+
+    <div class="grid">
+      <div class="course">Oral Anatomy</div>
+      <div class="course">Dental Radiology</div>
+      <div class="course">Restorative Dentistry</div>
+      <div class="course">Oral Pathology</div>
+      <div class="course">Prosthodontics</div>
+      <div class="course">Periodontology</div>
+      <div class="course">Dental Materials</div>
+      <div class="course">Preventive Dentistry</div>
+      <div class="course">Endodontics</div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section light">
+    <h3>Clinical & Professional Skills</h3>
+
+    <div class="skills-container">
+      <div class="skill-card">
+        <h4>Clinical Skills</h4>
+        <ul>
+          <li>Patient Assessment & Communication</li>
+          <li>Dental Charting & Documentation</li>
+          <li>Radiographic Interpretation</li>
+          <li>Infection Control & Sterilization</li>
+          <li>Preventive Oral Health Education</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Professional Strengths</h4>
+        <ul>
+          <li>Strong Work Ethic</li>
+          <li>Attention to Detail</li>
+          <li>Team Collaboration</li>
+          <li>Time Management</li>
+          <li>Patient Comfort & Empathy</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h4>Technical Knowledge</h4>
+        <ul>
+          <li>Dental Imaging Basics</li>
+          <li>Electronic Health Records (EHR)</li>
+          <li>Clinical Workflow Management</li>
+          <li>Professional Documentation</li>
+          <li>Dental Instruments Familiarity</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h3>Contact</h3>
+    <p>
+      Interested in opportunities after graduation? Feel free to reach out.
+    </p>
+
+    <div class="contact-box">
+      <p><strong>Email:</strong> yanias.email@example.com</p>
+      <p><strong>Phone:</strong> (000) 000-0000</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+      <p><strong>Location:</strong> United States</p>
+    </div>
+
+    <form class="contact-form" onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p id="successMessage" class="success-message"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Yania C | Dental Student Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
